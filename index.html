@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<HTML>
+    <HEAD>
+        <TITLE>Comics Store</TITLE>
+        <SCRIPT src="https://aframe.io/releases/1.0.4/aframe.min.js"></SCRIPT>
+        <SCRIPT src="./js/comics.js"></SCRIPT>
+    </HEAD>
+    <BODY>
+        <A-SCENE id="main-scene">
+            <A-SKY 
+            id="main-container" 
+            radius="5000" 
+            color="#028a0f"></A-SKY>
+            <A-ENTITY id="comics-container" comic></A-ENTITY>
+            <A-CAMERA id="camera" wasd-controls="enabled:false">
+            <A-ENTITY 
+            id="app-title" 
+            position="0 10 -1" 
+            text="font:exo2bold; align:center; width:2;color:#000; value: Virtual Comic Store"></A-ENTITY>
+            <a-ENTITY 
+            id="app-subtitle" 
+            position="0 8 -1" 
+            text="font:exo2bold; align:center;width:2;color:#000;value:Let's Read Some Comics"></a-ENTITY>
+            </A-CAMERA>    
+        </A-SCENE>
+    </BODY>
+</HTML>           
